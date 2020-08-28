@@ -1,0 +1,48 @@
+<!-- ################################ -->
+<!-- ############ HEADER ############ -->
+<!-- ################################ -->
+
+<header class='c-header'>
+  <div class='o-grid c-header__inner'>
+
+	<div class='o-grid__col o-grid__col-sm-9 o-grid__col-lg-3'>
+	  <div class='c-logo'>
+		{{ #if site.logo }}
+		  <a href='{{ site.url }}'>
+			<img class='c-logo__img' src='{{ site.logo }}' alt='{{ site.title }}'>
+		  </a>
+		{{ else }}
+		  <h1><a class='c-logo__link' href='{{ site.url }}'>{{ site.title }}</a></h1>
+		{{ /if }}
+	  </div>
+	</div>
+
+	<div class='o-grid__col o-grid__col-sm-3 o-grid__col-lg-9 _o-grid__col-full'>
+	  <div class='c-off-canvas-content js-off-canvas-content'>
+		<div class='js-off-canvas-toggle c-off-canvas-toggle c-off-canvas-toggle--close'>
+		  <span class='c-off-canvas-toggle__icon'></span>
+		</div>
+
+		<div class='o-grid'>
+		  <div class='o-grid__col o-grid__col-sm-12 o-grid__col-lg-9 o-grid__col-full'>
+			<nav class='c-nav-wrap'>
+			  <ul class='c-nav o-plain-list'>
+				{{ navigation }}
+				<li class='c-nav__item'>
+				  <a class='toggle-search-button js-search-toggle' href='#' aria-label='{{t "Search" }}'>
+					<span class='c-nav__icon' data-icon='ei-search' data-size='s'></span>
+				  </a>
+				</li>
+			  </ul>
+			</nav>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class='js-off-canvas-toggle c-off-canvas-toggle'>
+		<span class='c-off-canvas-toggle__icon'></span>
+	  </div>
+	</div>
+
+  </div>
+</header>
