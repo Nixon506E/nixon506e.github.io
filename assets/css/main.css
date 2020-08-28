@@ -2193,7 +2193,15 @@ body {
 
 .o-section--home {
   position: relative;
-  height: 50vh;
+  height: 100vh;
+}
+
+.c-nav_item--home {
+  display: inline !important;
+}
+
+.c-nav__link--home {
+  display: inline !important;
 }
 
 .c-home__social-buttons, .c-home__container {
