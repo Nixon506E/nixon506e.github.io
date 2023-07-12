@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    <div class="c-preloader  js-preloader">
+        <div class="c-preloader__spinner  t-preloader__spinner"></div>
+    </div>
+
+    <div class="js-main-container js-off-canvas-container  c-off-canvas-container">
+      {%- include header.html -%}
+  
+      <!-- ################################ -->
+      <!-- ############ CONTENT ############ -->
+      <!-- ################################ -->
+      <main class="page-content" aria-label="Content">
+        {{ content }}
+      </main>
+  
+      {%- include footer.html -%}
+    </div>
+
+  </body>
+
+</html>

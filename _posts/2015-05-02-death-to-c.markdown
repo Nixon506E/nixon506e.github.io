@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Death To C"
+date:   2015-05-02 09:46:27 -0400
+tags: development
+---
+
+# [Death To C](http://feedproxy.google.com/~r/Techcrunch/~3/OuIXvlUYNV4/)
+
+Really interesting article about the future of programming languages; made me acknowledge my allegiance to C based languages and prompts me to rethink that going forward.
