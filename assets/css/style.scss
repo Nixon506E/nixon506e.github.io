@@ -1854,9 +1854,9 @@ img {
 
 // prevent horizontal scroll during off-canvas
 
-// html, body {
-//   overflow-x: hidden;
-// }
+html, body {
+  overflow-x: clip;
+}
 
 @media (max-width: 980px) {
   .c-off-canvas-content {
@@ -2572,23 +2572,34 @@ img {
     }
   }
   
+  .site-text {
+    display: none;
+  }
+  
   .site-logo img {
+    display: block;
     width: 48px;
     height: 48px;
-    margin-top: -4px;
+    margin-top: 4px;
   }
   
   @media screen and (min-width: $on-medium) {
     .site-logo {
       display: none;
-    } 
-  }
-  
-  @media screen and (max-width: calc($on-medium - 1px)) {
+    }
+    
     .site-text {
-      display: none;
-    } 
+      display: block;
+    }
   }
+}
+
+.site-footer {
+  @media screen and (max-width: 1024px) {
+    header {
+      display: none;
+    }
+  } 
 }
 
 .site-footer {
@@ -2605,6 +2616,19 @@ img {
     
     .o-section__content {
       width: 100%; 
+    }
+  }
+  
+  @media screen and (max-width: $on-medium) {
+    .site-nav {
+      position: static;
+      float: right;
+      background-color: transparent;
+      border: none;
+      
+      .page-link {
+        padding: 2px;
+      }
     }
   }
 }

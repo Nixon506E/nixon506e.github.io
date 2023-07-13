@@ -63,8 +63,7 @@ function setup_scrollreveal()
         var default_config = {
             duration: 500,
             delay: 0,
-            easing: 'ease',
-            mobile: false
+            easing: 'ease'
         };
         var header_config = $.extend(false, default_config, {
             duration: 1200,
